@@ -1,0 +1,21 @@
+language: python
+
+python:
+    - "3.8"
+env:
+    - SECRET_KEY='TEST'
+services:
+   - postgresql
+install:
+    - pipenv install
+
+script:
+    -  python manage.py test
+
+notifications:
+  email:
+    recipients:
+      - chaandsheikh@gmail.com
+      - admin@studyeasy.org
+    on_success: never # default: change
+    on_failure: always # default: always1
