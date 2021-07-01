@@ -16,7 +16,7 @@ class PublicUnitTests(TestCase):
 
     def test_login_access(self):
         res = self.client.get(LIST_URL_MEMEORY_API)
-        self.assertEqual(res.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
 
 
 class PrivateUnitTests(TestCase):
