@@ -3,7 +3,7 @@ language: python
 python:
     - "3.8"
 env:
-    - SECRET_KEY='TEST'
+    - SECRET_KEY='jjsdfynagga'
 services:
    - postgresql
 install:
