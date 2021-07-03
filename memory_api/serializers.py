@@ -9,11 +9,11 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class MemorySerializer(serializers.ModelSerializer):
-    tags = serializers.SlugRelatedField(
-        many=True,
-        read_only=True,
-        slug_field='tag'
-    )
+    # tags = serializers.SlugRelatedField(
+    #     many=True,
+    #     read_only=True,
+    #     slug_field='tag'
+    # )
 
     class Meta:
         model = models.Memory

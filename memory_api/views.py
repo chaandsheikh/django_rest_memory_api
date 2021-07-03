@@ -19,3 +19,5 @@ class MemoryViewset(viewsets.ModelViewSet):
 class TagViewset(viewsets.ModelViewSet):
     queryset = models.Tag.objects.all()
     serializer_class = serializers.TagSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (TokenAuthentication,)
